@@ -1,2 +1,3 @@
+# cactus website by bedimcode
 
-## cactus website by bedimcode
+- fully responsive design
