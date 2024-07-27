@@ -2,3 +2,4 @@
 
 - fully responsive design
 - HTML CSS and JS
+- ScrollReveal
