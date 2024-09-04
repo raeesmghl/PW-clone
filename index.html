@@ -1,14 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwindcss | pw Clone | Hitesh Choudhary | Raees Mughal</title>
+    <title>PW Skills | Tailwind css | Hitesh Choudhary | Raees Mughal</title>
 
-    <!-- connect to output.css -->
-     <link rel="stylesheet" href="output.css">
+
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+
+    <!-- connect to styles -->
+    <link rel="stylesheet" href="style.css">
+
+
+
 </head>
-<body class="bg-red-900">
-    <h1 class="bg-blue-500 text-white text-4xl text-center capitalize italic">hello world</h1>
+
+<body class="bg-black">
+
+
+    <nav class="w-full bg-black flex justify-between items-center px-12 py-3 lg:px-24">
+        <div class="text-2xl text-teal-500 font-bold">PW Skills</div>
+        <ul class="hidden gap-8 md:flex text-white">
+            <li>
+                <a href="#" class="nav-item">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-item">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-item">Contact</a>
+            </li>
+        </ul>
+
+
+        <div class="sm:flex hidden gap-2">
+            <div
+                class="text-teal-500 px-4 py-2 text-lg font-semibold rounded-md hover:bg-teal-600 hover:text-teal-200 duration-200 cursor-pointer ">
+                Login</div>
+            <div
+                class="bg-teal-500 text-teal-900 px-4 py-2 text-lg font-semibold rounded-md hover:bg-teal-600 hover:text-teal-200 duration-200 cursor-pointer">
+                Signup</div>
+        </div>
+
+        <i class="ri-menu-3-line text-lg font-bold block sm:hidden text-white" id="hamburger-menu"></i>
+
+
+
+        <!-- menu for small devices -->
+        <div class="absolute z-[1000] bg-black text-white inset-0 h-screen hidden" id="menu-mobile">
+            <div class="flex justify-between items-center text-lg mb-10  px-12 py-3">
+                <div class="text-2xl text-teal-500 font-bold">PW Skills</div>
+                <i class="ri-close-large-line" id="close-menu"></i>
+            </div>
+            <ul class="flex flex-col justify-center items-center gap-4 mb-10">
+                <li>
+                    <a href="#" class="nav-item">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Contact</a>
+                </li>
+            </ul>
+            <div class="flex gap-2 flex-col px-10 max-w-sm mx-auto">
+                <div
+                    class="text-teal-500 px-4 py-2 text-lg font-semibold rounded-md hover:bg-teal-600 hover:text-teal-200 duration-200 cursor-pointer text-center">
+                    Login</div>
+                <div
+                    class="bg-teal-500 text-teal-900 px-4 py-2 text-lg font-semibold rounded-md hover:bg-teal-600 hover:text-teal-200 duration-200 cursor-pointer text-center">
+                    Signup</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="bg-black flex flex-col-reverse md:p-24 p-10 gap-10 justify-center items-center md:flex-row overflow-hidden">
+
+        <div class=" md:flex-1">
+            <h1 class="text-[1.5rem] md:text-[2rem] lg:text-[3rem] md:text-start text-center font-bold text-white mb-4">
+                THE INDUSTRY REQUIRES ADVANCED SKILLS.</h1>
+            <H1 class="text-2xl md:text-[2rem] lg:text-4xl  md:text-start text-center font-semibold text-teal-500">GET
+                IT THE SMART WAY</H1>
+        </div>
+
+        <div class="md:flex-1">
+            <img src="images/react.png" class="w-full sm:w-[80%] mx-auto max-w-2xl animate-spin-slow">
+        </div>
+
+    </header>
+
+
+
+    <section class="px-4 md:px-24 py-20">
+        <div class="mb-20">
+            <h2 class="text-center text-teal-500 text-2xl font-semibold">Pure hardwork, no shortcuts!</h2>
+            <div class="w-28 bg-yellow-300 h-1 mx-auto mt-4 rounded-3xl"></div>
+        </div>
+
+
+        <div class="text-white max-w-[1200px] mx-auto flex flex-col justify-center items-center gap-10 md:flex-row md:justify-between ">
+
+            <div class="text-center capitalize">
+                <i class="ri-book-shelf-line bg-white text-teal-500 p-5 text-[4rem] rounded-full"></i>
+                <h3 class="text-2xl mt-5 mb-2">600+</h3>
+                <p class="text-lg text-gray-600">different courses</p>
+            </div>
+            
+            <div class="text-center capitalize">
+                <i class="ri-group-line bg-white text-teal-500 p-5 text-[4rem] rounded-full"></i>
+                <h3 class="text-2xl mt-5 mb-2">700,000+</h3>
+                <p class="text-lg text-gray-600">students enrolled</p>
+            </div>
+
+           
+            <div class="text-center capitalize">
+                <i class="ri-loop-right-line bg-white text-teal-500 p-5 text-[4rem] rounded-full"></i>
+                <h3 class="text-2xl mt-5 mb-2">10,000+</h3>
+                <p class="text-lg text-gray-600">successful transition</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
