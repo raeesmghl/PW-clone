@@ -3,10 +3,14 @@ module.exports = {
   content: ['./*.{html,js}'],
   theme: {
     extend: {
-      fontFamily : {
-        custom : ["Sevillana", "cursive"]
+      animation : {
+        'spin-slow': 'spin 6s linear infinite'
       }
+      
     },
+    fontFamily : {
+      poppins : ["Poppins", "sans-serif"]
+    }
   },
   plugins: [],
 }
