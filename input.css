@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base {
-    body{
-        @apply font-custom
+@layer utilities {
+    .nav-item {
+        @apply text-lg font-semibold hover:text-teal-500 duration-300;
     }
 }
